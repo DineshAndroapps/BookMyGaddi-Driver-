@@ -1,0 +1,10 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="im.delight.android.location">
+<!--    <uses-sdk-->
+<!--        android:minSdkVersion="26"-->
+<!--        android:targetSdkVersion="29"-->
+<!--         />-->
+    <application />
+</manifest>

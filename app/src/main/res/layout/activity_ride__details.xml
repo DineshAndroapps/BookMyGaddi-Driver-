@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ride__details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androapps.bookmygaddidriver.activities.Ride_Details">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lnr_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ridedetalisheader"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/txtsetdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:text="Fri, May 13"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", 7:57 PM"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtbill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_top"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rlt_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtbill"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rlt_driver"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#D3D3D3">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/newcar"/>
+
+                <TextView
+                    android:id="@+id/txtcartype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/txtridetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/lnr_car"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="#D3D3D3">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_kmtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line6"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/km"/>
+
+                <TextView
+                    android:id="@+id/txtamount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/txtkm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txttimes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/lnr_kmtime"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="#D3D3D3">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imglocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/locations"/>
+
+                <TextView
+                    android:id="@+id/txtsourceadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imglocation"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/txtdestinationadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imglocation"
+                    android:layout_below="@+id/txtsourceadd"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rlt_points"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="#D3D3D3">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtbil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Bill Details"
+                    android:textSize="18dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/totalfare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Total Fare"
+                    android:textColor="#000"
+                    android:layout_below="@+id/txtbil"/>
+
+                <TextView
+                    android:id="@+id/txtfarerate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtbil"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:layout_marginRight="20dp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/totalfare"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txttax1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:layout_marginLeft="18dp"/>
+                    <TextView
+                        android:id="@+id/txttaxamount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000"
+                        android:layout_marginRight="20dp"/>
+                    <TextView
+                        android:id="@+id/txttax2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttax1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:layout_marginLeft="18dp"/>
+                    <TextView
+                        android:id="@+id/txttaxamount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttaxamount1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txttax3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttax2"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:layout_marginLeft="18dp"/>
+                    <TextView
+                        android:id="@+id/txttaxamount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttaxamount2"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000"
+                        android:layout_marginRight="20dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/txtroundof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttax3"
+                        android:layout_marginLeft="18dp"
+                        android:textColor="#000"
+                        android:text="Round off"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtamountroundoff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttaxamount3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"/>
+
+
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlt_tax"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="Discount (Coupon used)"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/txtdiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rlt_tax"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_below="@+id/discount"
+                    android:layout_marginTop="10dp"
+                    android:text="Total Bill"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/txttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtdiscount"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:layout_marginRight="20dp"/>
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rlt_amount"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="#D3D3D3">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_Capture"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_margin="25dp"
+            android:background="#7C7B7B"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Camera"
+            android:background="@drawable/ic_camera_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_Capture"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/red"
+            android:layout_below="@id/btn_Camera"/>
+      <EditText
+          android:id="@+id/edit_startKm"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:hint="Start Km"
+          android:gravity="center"
+          android:textColorHint="#1C70CA"
+          android:textSize="35dp"
+
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+          android:layout_below="@id/view"
+          android:layout_centerHorizontal="true">
+
+      </EditText>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_startKm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            android:background="@drawable/btn_1"
+            android:textColor="#7104ED"
+            android:text="Submit"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
